@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
-import Image from "gatsby-image"
-import Title from "./Title"
+import React from 'react'
+import styled from 'styled-components'
+import { graphql, useStaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
+import Image from 'gatsby-image'
+import Title from './Title'
 
 const Recent = () => {
   return <Wrapper>Banner Recent</Wrapper>
@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   .post {
     display: grid;
     grid-template-columns: auto 1fr;
+    grid-gap: 0 1rem;
     column-gap: 1rem;
     margin-bottom: 1rem;
   }

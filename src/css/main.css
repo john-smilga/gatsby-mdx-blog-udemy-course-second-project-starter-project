@@ -36,8 +36,8 @@ Variables
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-white: #fff;
   --clr-black: #0a0c10;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -243,6 +243,7 @@ Navbar
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr auto;
+    grid-gap: 0 2rem;
     column-gap: 2rem;
     align-items: center;
   }
@@ -357,13 +358,13 @@ Hero
 }
 
 .hero::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   height: 6rem;
   width: 100%;
-  background: url("../assets/vector.svg");
+  background: url('../assets/vector.svg');
   background-size: cover;
 }
 .hero-person {
@@ -417,6 +418,7 @@ Posts Component
   .posts-center {
     display: grid;
     grid-template-columns: 1fr 250px;
+    grid-gap: 1rem;
     column-gap: 1rem;
   }
 }
@@ -526,11 +528,11 @@ Single Pages
     width: 15rem;
     border-radius: 0;
   }
-  input[type="text"] {
+  input[type='text'] {
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
   }
-  input[type="email"] {
+  input[type='email'] {
     border-right: none;
   }
   .submit-btn {
@@ -556,7 +558,7 @@ Testing Post and Components
   position: relative;
 }
 .code pre {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 .code .token-line {
   line-height: 1.5;
