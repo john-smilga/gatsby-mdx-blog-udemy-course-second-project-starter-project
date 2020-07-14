@@ -1,8 +1,8 @@
-import React from "react"
-import Title from "./Title"
-import Image from "gatsby-image"
-import styled from "styled-components"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react'
+import Title from './Title'
+import Image from 'gatsby-image'
+import styled from 'styled-components'
+import { graphql, useStaticQuery } from 'gatsby'
 // ...GatsbyImageSharpFluid
 
 const Instagram = () => {
@@ -13,6 +13,7 @@ const Wrapper = styled.article`
   .images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
     gap: 1rem;
   }
 `
